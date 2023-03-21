@@ -1,0 +1,598 @@
+/* ////////// */
+/* CSS remedy */
+/* ////////// */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ///////////////// */
+/* Custom properties */
+/* ///////////////// */
+:root {
+  --color-text: #E7DFD4;
+  --color-main: #F3EFE9;
+  --color-lightbackground: #586454;
+  --color-background: #3D4C3A;
+  --color-hover: #6B7464;
+  --color-maintext: #000;
+}
+
+
+/* //////////////// */
+/* Algemene styling */
+/* //////////////// */
+
+/* ////// */
+/* Header */
+/* ////// */
+header {
+  background-color: var(--color-background);
+  height: 46em;
+}
+
+/* Navigatie */
+nav ul {
+  color: var(--color-text);
+
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+
+  font-family: ofelia-display, sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+
+  margin: 0;
+}
+
+nav ul li {
+  padding: 1.5em;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* Isa Beaujon + Subkopje */
+header h1 {
+  color: var(--color-text);
+
+  font-family: condor, sans-serif;
+  font-weight: 400;
+  font-size: 6em;
+  margin: 0;
+}
+
+header h2 {
+  color: var(--color-text);
+
+  font-family: ofelia-display, sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+
+  margin-top: -1em;
+
+}
+
+header>section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  margin-top: 12em;
+}
+
+header>section:nth-of-type(1) img {
+  width: 2em;
+
+  margin-top: 17em;
+}
+
+/* //////// */
+/* Over mij */
+/* //////// */
+main section:nth-of-type(1) {
+  background-color: var(--color-main);
+  display: flex;
+  justify-content: center;
+  padding: 5em;
+}
+
+main section:nth-of-type(1) img:nth-of-type(1) {
+  width: 12em;
+  height: 100%;
+}
+
+main section:nth-of-type(1) p {
+  font-family: ofelia-display, sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+
+  margin-left: 1em;
+  margin-top: 2em;
+
+  width: 22em;
+}
+
+/* ////// */
+/* Skills */
+/* ////// */
+main section:nth-of-type(2) {
+  background-color: var(--color-background);
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) h2 {
+  color: var(--color-text);
+
+  font-family: condor, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+}
+
+main section:nth-of-type(2) p {
+  font-family: ofelia-display, sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+
+  width: 27em;
+
+  padding: 1em;
+  margin-top: 5em;
+  margin-right: 1em;
+
+  background-color: var(--color-lightbackground);
+  border-radius: 2em;
+}
+
+main section:nth-of-type(2) img {
+  width: 25em;
+  height: 100%;
+
+  padding-right: 1.5em;
+  padding-top: 5em;
+}
+
+/* Styling witte lijn */
+main {
+  background-color: var(--color-background);
+}
+
+main>div {
+  background-color: var(--color-text);
+
+  width: 15em;
+  height: .1em;
+  border-radius: 1em;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ///////// */
+/* Projecten */
+/* ///////// */
+main section:nth-of-type(3) {
+  background-color: var(--color-background);
+  padding-top: 1em;
+}
+
+
+main section:nth-of-type(3) h2 {
+  color: var(--color-text);
+
+  font-family: condor, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+
+  margin-top: 0;
+  padding-top: .7em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+main section:nth-of-type(3) img {
+  width: 22em;
+}
+
+.flex-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1.5em;
+
+  padding-bottom: 8em;
+}
+
+/* ///////////////////// */
+/* Styling van de hovers */
+/* ///////////////////// */
+
+
+/* Algemene styling hovers */
+#projecten div h2,
+p {
+  width: 20em;
+  color: var(--color-maintext);
+}
+
+#projecten div h2 {
+  font-size: 1.5em;
+  text-align: left;
+  width: 12em;
+  
+  padding: 0;
+
+  margin-top: 1em;
+  margin-left: .89em;
+}
+
+#projecten div p {
+  font-size: .9em;
+
+  margin-top: .5em;
+  margin-left: 1.5em;
+}
+
+
+
+
+/* Project_rmdd */
+.container_rmdd {
+  position: relative;
+  width: 22em;
+}
+
+.rmdd {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_rmdd {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_rmdd:hover .overlay_rmdd {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_rmdd {
+  font-family: ofelia-display, sans-serif;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* Vormgeving */
+.container_vormgeving {
+  position: relative;
+  width: 22em;
+}
+
+.vormgeving {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_vormgeving {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_vormgeving:hover .overlay_vormgeving {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_vormgeving {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+/* Frontend development */
+.container_frontend {
+  position: relative;
+  width: 22em;
+}
+
+.frontend_development {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_frontend {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_frontend:hover .overlay_frontend {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_frontend {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+/* Webapplicaties */
+.container_webapplicaties {
+  position: relative;
+  width: 22em;
+}
+
+.webapplicaties {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_webapplicaties {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_webapplicaties:hover .overlay_webapplicaties {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_webapplicaties {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* Visual interface design */
+.container_vid {
+  position: relative;
+  width: 22em;
+}
+
+.vid {
+  display: block;
+  width: 22em;
+  height: auto;
+}
+
+.overlay_vid {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_vid:hover .overlay_vid {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.text_vid {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+/* Project beyond */
+.container_beyond {
+  position: relative;
+  width: 22em;
+}
+
+.beyond {
+  display: block;
+  width: 22em;
+  height: auto;
+}
+
+.overlay_beyond {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_beyond:hover .overlay_beyond {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_beyond {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* Inleiding programmeren */
+.container_programmeren {
+  position: relative;
+  width: 22em;
+}
+
+.programmeren {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_programmeren {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_programmeren:hover .overlay_programmeren {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_programmeren {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* User centred design */
+.container_ucd {
+  position: relative;
+  width: 22em;
+}
+
+.ucd {
+  display: block;
+  width: 22em;
+  height: auto;
+
+}
+
+.overlay_ucd {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_ucd:hover .overlay_ucd {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_ucd {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+/* Informatie architectuur */
+.container_ia {
+  position: relative;
+  width: 22em;
+}
+
+.ia {
+  display: block;
+  width: 22em;
+  height: auto;
+}
+
+.overlay_ia {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 22em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--color-main);
+}
+
+.container_ia:hover .overlay_ia {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text_ia {
+  font-family: ofelia-display, sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
